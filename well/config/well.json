@@ -1,0 +1,20 @@
+[{
+    "start_urls" : ["https://well.ca/products/navitas-naturals-gelatinized-maca-powder_140769.html"],
+    "fields" : {
+        "name" : "//div[@id='gtm-main-product-page']//h1/text()",
+        "price" : "//div[@id='gtm-main-product-page']//span[@itemprop='price']/text()",
+        "price_old" : "//div[@id='gtm-main-product-page']//div[@class='oldPrice']/text()",
+        "image" : "//div[@id='gtm-main-product-page']//div[@class='product-image']/img/@src",
+        "description" : "//div[contains(@class, 'product-collateral')]//dd//*[@class='std']",
+        "Rating_value" :"//div[@id='gtm-main-product-page']//meta[contains(@itemprop, 'ratingValue')]/@content",
+        "Rating_max" :"5",
+        "ReviewCount":"//div[@id='gtm-main-product-page']//span[contains(@itemprop, 'reviewCount')]/text()",
+        "Categories":"//div[@class='sprite-list sprite-list-tooltip']/img/@data-original-title",
+        "Brand":"//div[@id='gtm-main-product-page']//meta[contains(@itemprop, 'brand')]/@content",
+
+        "Reviews": {
+            "users": "//span[@class='product_text product_text_review']/text()",
+            "comments": "//div[contains(@itemprop, 'description')]/text() and //div[contains(@itemprop, 'description')]//*//text()"
+        }
+    }
+}]
