@@ -1,0 +1,39 @@
+{
+  "start_urls": [
+    "https://us.targus.com/",
+    "https://us.targus.com/collections/laptop-bags-cases",
+    "https://us.targus.com/collections/tablet-cases",
+    "https://us.targus.com/collections/docking-stations",
+    "https://us.targus.com/collections/accessories"
+  ],
+  "fields": {
+    "name": "//div[@class='product-single__meta']//h1/text()",
+    "color": "//div[@id='pdp-specifications-list']//label[contains(.,'Color')]/following-sibling::div[1]/text()",
+    "Material": "//div[@id='pdp-specifications-list']//label[contains(.,'Material')]/following-sibling::div[1]/text()",
+    "reference": "//div[@id='pdp-product-sku-value']/text()",
+    "image": "//div[@class='images']/img/@src",
+    "image1": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[1]/@href",
+    "image2": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[2]/@href",
+    "image3": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[3]/@href",
+    "image4": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[4]/@href",
+    "image5": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[5]/@href",
+    "image6": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[6]/@href",
+    "image7": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[7]/@href",
+    "image8": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[8]/@href",
+    "image9": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[9]/@href",
+    "image10": "//div[@class='images']/div[contains(@class,'thumbnails')]/a[10]/@href",
+    "description": "//div[@id='pdp-long-description']//p//text()",
+    "Specification": "//ul[@id='pdp-specs-ul']//text()",
+    "brand_text": "",
+    "categories": "//nav[@class='breadcrumb']/a[2]/text()",
+    "availability": "//link[@itemprop='availability']/@href",
+    "rating_average": "",
+    "rating_count": "",
+    "barcode": "//div[@id='pdp-specifications-list']//label[contains(.,'EAN')]/following-sibling::div[1]/text()",
+    "stock": ""
+  },
+  "links": {
+    "detail": "//a[@class='grid-view-item__link']",
+    "next_page": "//div[@id='bc-sf-filter-bottom-pagination']/div[@class='list--inline pagination']/span[@class='next']/a"
+  }
+}

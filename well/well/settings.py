@@ -68,25 +68,25 @@ ROBOTSTXT_OBEY = True
 #    'well.pipelines.WellPipeline': 300,
 #}
 
-FEED_EXPORT_FIELDS = [
-    'Title',
-                        'CurrentPrice',
-                        'OldPrice',
-                        # 'Sku',
-                        'Image',
-                        'Availability',
-                        'Rating_value',
-                        # 'Rating_max',
-                        #
-                        # 'Categories',
-                        'Brand',
-                        'Url',
-                        'Description',
-                        #
-                        # 'ReviewCount',
-                        # 'Barcode',
-
-                        ]
+# FEED_EXPORT_FIELDS = [
+#     'Title',
+#                         'CurrentPrice',
+#                         'OldPrice',
+#                         # 'Sku',
+#                         'Image',
+#                         'Availability',
+#                         'Rating_value',
+#                         # 'Rating_max',
+#                         #
+#                         # 'Categories',
+#                         'Brand',
+#                         'Url',
+#                         'Description',
+#                         #
+#                         # 'ReviewCount',
+#                         # 'Barcode',
+#
+#                         ]
 
 FEED_URI = 'data/%(name)s/%(time)s.csv'
 FEED_FORMAT = 'csv'
